@@ -1,0 +1,21 @@
+31Jan2019
+
+Variables:
+
+•	Meaning full name, starting with _ , letter(upper/lower case doesn’t matter)
+•	Check for print (name + age) #where age is an int value
+•	Cntrl +f1 for shortcut.
+•	(name + age) java automatically converts in print case , from int age to string age, python doesn’t do that (in a way its good you wont have weird errors because of type conversion)
+•	Data types are classified as numeric, sequences(basically strings), mappings, files, classes, instances and exceptions.
+•	a/b gives answer as float number, a//b gives has a whole number.
+•	Try that for loop at 12.16 #it causes problem in loop if you give a/b which a float but not an integer
+•	Parrot = Norway, print(Parrot[3]) gives w , it returns a specific character at that line.
+•	Print(Parrot[-1]) gives y , that’s because it starts from right side then in the reverse order, try Parrot[0:6] it will be Norway , try Parrot[:6], lecture 26. 6:30 onwards
+
+String Formatting
+•	27th video in reference
+•	Str(age) – converts whats in bracket to string
+•	String formatting operator is now being deprecated (is no longer recommended)in python 3, it was introduced in python2 and then used heavily so you still need to understand onld code
+•	Check python pi values 22/7
+
+--------------------------------------
