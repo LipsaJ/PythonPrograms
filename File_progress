@@ -6,6 +6,28 @@ guess the number program(programs wants yu to guess five and gives you two chanc
 
 -make ifProgramFlow project, check the bool values
 go through all of the projects and made them
+
+Augmented assignments is using teh short form
+ex: cleaned_number = cleaned_number + i
+instead you could do cleaned number += i
+
+in the first case python evaluated two variables and then destroys one but in case of second one, python just modifies
+thats going to be more efficient, so use this its more efficient
+two binary operators could be applied on strings as well.
+ those are +, *
+
+example:
+greetings = "Good "
+greetings += "Morning "
+
+print(greetings)
+
+greetings *= 5
+print(greetings)
+
+----
+if you use len you lose he build in function so dont do that
+
 ---------------------------------------------------------
 
 31Jan2019
