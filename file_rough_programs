@@ -1,3 +1,26 @@
+First Feb Start:
+--prog1
+
+#python was created so its easy to read and unclutered, in java you write a for loop
+#in brackets but with python its just the indentation
+for i in range(1,10):
+    print("No {} when squared {:<2} when cubed {:<3}".format(i,i**2,i**3))
+    #print("No {} when squared {:2} when cubed {:3}".format(i,i**2,i**3))
+
+--prog2
+
+name = input("whats your name? ")
+age = input("How old are you?, {} ".format(name)}
+print(age)
+
+if age >= 18:
+    print("You are elligible to vote")
+else:
+    print("Come back after {} years".format(18 - age))
+
+
+
+---------------------------------------------------------------------------End of 1stFeb
 # Hello World program in Python
     
 number = "1,2,3,4,5,6,7,8,9,10,11,12"
