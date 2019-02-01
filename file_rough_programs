@@ -1,4 +1,4 @@
-First Feb Start:
+------------------///First Feb Start:///1 feb 2019
 --prog1
 
 #python was created so its easy to read and unclutered, in java you write a for loop
@@ -18,6 +18,175 @@ if age >= 18:
 else:
     print("Come back after {} years".format(18 - age))
 
+--prog3
+
+parrot = "Indian Blue"
+charc = input("Please enter a character")
+
+#charc not in paror works in the opposite way
+if charc in parrot:
+    print("Give me an {}, Liff".format(charc))
+else:
+    print("I dont need it!"))
+    
+-----------------
+
+x = 5
+y = 7
+
+if x>y:
+    print("x is greater than y")
+elif x<y:
+    print("x is smaller than y")
+else:
+    print("x equals y")
+    
+-------challange prog for if else
+
+name = input("Please enter your name:")
+age = int(input("How old are you?, {}".format(name)))
+
+if 17<age<31:
+    print("Hi {}! Welcome to the resort!".format(name))
+else:
+    print("Hi {}, I am sorry you are not allowed at this place.".format(name))
+    
+-----------for loop
+
+name = "Lipsa"
+
+for i in range (0,len(name)):
+    print(name[i] + " : " + str(i))
+
+#in java it finishes at 5 but in puthon it finishes at len -1
+
+print(len(name))
+
+numbers = "1,23,45,67,89,100"
+
+for i in range(0,len(numbers)):
+    if numbers[i] in "0123456789":
+        print(numbers[i])
+
+for i in range(0,len(numbers)):
+    if numbers[i] in "0123456789":
+        print(numbers[i],)
+
+#its not working here in editor try at home        
+#for i in range(0,len(numbers)):
+#    if numbers[i] in "0123456789":
+#        print(numbers[i],end = '')
+
+#check program at 8 30, 33prog
+
+#indentation matter alot here
+
+cleaned_number = ''
+for i in range(0,len(numbers)):
+    if numbers[i] in "0123456789":
+        cleaned_number = cleaned_number + numbers[i]
+
+new_number = int(cleaned_number)
+print(new_number)
+
+---chapter 34
+
+numbers = "9,738,45,74,565,93,84,563,72,900,55,39,5"
+
+clean_number = ''
+for char in numbers:
+    if char in '0123456789':
+        clean_number = clean_number + char
+#here in python , numbers[i] is not mandatory you can just read characters one by one
+print(clean_number)
+    
+#this is very useful
+for state in ["mental","Amazingly cute","Should be thrashed","Niceee"]:
+    print("Yashu is " + state )
+    #print("Yashu is {}".format(state))
+    #the above also works
+
+for i in range(0,100,20):
+    print("Value is : {}".format(i))
+    #it runs till 100 -1
+    
+for i in range(1,13):
+    print("================Table of {} ================".format(i))
+    for j in range(1,11):
+        print("{} * {} = {}".format(i,j,i*j))
+
+--exercises
+
+quote = """
+Alright, but apart from the Sanitation, the Medicine, Education, Wine,
+Public Order, Irrigation, Roads, the Fresh-Water System,
+and Public Health, what have the Romans ever done for us?
+"""
+
+# Use a for loop and an if statement to print just the capitals in the quote above.
+for char in quote:
+    if  char in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+        print(char)
+        
+
+for i in range(0,100,7):
+    print(i)
+    
+--chapter 35
+
+#continue bypasses the code and stop processing for that condition and process for the next value in sequence.
+#break just breaks the loop, it good to use in a condition where we dont need to continue in case of any defect
+
+shopping_list = ['Eggs','Milk','Apple','Potato','Spam','Tomato']
+
+for item in shopping_list:
+    if item == 'Spam':
+        continue
+    print(item)
+    
+#in the below code adding break doesnt make sense
+for item in shopping_list:
+    if item == 'Spam':
+        break
+    print(item)
+    
+#a good example of break 
+
+meals = ['Eggs','Burger','Milk','fruit','Chicken','Meat','Cheese','Vegetable']
+
+nast_item = ''
+for food in meals:
+    if food == 'Spam':
+        nast_item == food #this throws an error if not defined so please initialize at the start
+        break
+#this will get only executed if the loop is not broken and observe this is after for loop, its not the continuation
+#of the above if, this is the else for continuation after break
+else:
+    print("I'll have one plate of that!")
+    
+if nast_item:
+    print("Please give me something without spam")
+
+#exercises
+#in java we define variables like nastyItem tahts called a camel case and same can be used in python as well
+# Modify this loop to stop when i is exactly divisible by 11
+for i in range(0, 100, 7):
+    print(i)
+    if i == 0:
+        continue
+    
+    elif (i % 11) == 0:
+        break
+    
+#numbers between 0 and 20 that aren't divisible by 3,5
+for i in range(0,20):
+    if(i%3 == 0) or (i%5 == 0):
+        continue
+    else:
+        print(i)
+
+#Intellij gives warning while programming try to fix it that time itself
+    
 
 
 ---------------------------------------------------------------------------End of 1stFeb
